@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客成员 - 我是程序员</title>
+    <link rel="stylesheet" href="resource/static/css/user.css">
+    <script src="resource/static/plugin/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            let url = document.location.href;
+            if (url.indexOf("#") != -1) {
+                let id = url.substr(url.indexOf("#") + 1);
+                $("html,body").animate({scrollTop: $("#" + id).offset().top - 80}, 100);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="top-container">
+            <div class="logo">
+                    <a href="index.html">我是程序员</a>
+            </div>
+                <a href="index.html" class="nav ">博客</a>
+                <a href="category.html" class="nav ">分类专栏</a>
+                <a href="special.html" class="nav ">专题</a>
+                <a href="user.html" class="nav active">成员</a>
+                <a href="comment.html" class="nav ">留言板</a>
+        </div>
+    </div>
+<div class="body-container">
+    <div class="user-container">
+            <div class="user-item" id="100,000">
+                <div class="user-icon">
+                        <img src="resource/image/202406/SKPVAqMUUHAPbTaJRtBIvdOyqzqJeE.jpg">
+                </div>
+                <div class="user-info">
+                    <div class="nick-name">WPF</div>
+                    <div class="profession">
+                        <span>职位：Java开发</span>
+                        <span class="blog-count">博客：0篇</span>
+                    </div>
+                    <div class="introduction"><p>憨批一个</p></div>
+                </div>
+            </div>
+            <div class="user-item" id="100,002">
+                <div class="user-icon">
+                        <img src="resource/image/202406/glGYYWoYkRLUQcruxaGfbMkEoUZugV.jpg">
+                </div>
+                <div class="user-info">
+                    <div class="nick-name">DZQ</div>
+                    <div class="profession">
+                        <span>职位：程序员</span>
+                        <span class="blog-count">博客：0篇</span>
+                    </div>
+                    <div class="introduction"><p style="text-align: start;">大佬一个</p><p style="text-align: start;"><br></p></div>
+                </div>
+            </div>
+            <div class="user-item" id="100,006">
+                <div class="user-icon">
+                        <img src="resource/image/202406/UMJtUBIwhUephyrozQTPNZWkiidfFo.jpg">
+                </div>
+                <div class="user-info">
+                    <div class="nick-name">SHY</div>
+                    <div class="profession">
+                        <span>职位：student</span>
+                        <span class="blog-count">博客：0篇</span>
+                    </div>
+                    <div class="introduction"><p>我是一名优秀的学生</p></div>
+                </div>
+            </div>
+    </div>
+</div>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?63b3f00d92dbfecbe9376c26282c2599";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</body>
+</html>
